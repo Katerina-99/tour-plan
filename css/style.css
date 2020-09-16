@@ -399,7 +399,6 @@ template {
   font-size: 12px;
   line-height: 15px;
   color: #333333;
-  margin-left: 18px;
 }
 
 .search__button {
@@ -410,6 +409,10 @@ template {
   height: 100%;
   border: none;
   background-color: #EC1F46;
+}
+
+.search__button:hover {
+  cursor: pointer;
 }
 
 .user {
