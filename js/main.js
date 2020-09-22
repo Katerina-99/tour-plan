@@ -6,5 +6,10 @@ var mySwiper = new Swiper(".swiper-container", {
   navigation: {
     nextEl: ".slider-button--next",
     prevEl: ".slider-button--prev"
+  },
+  effect: "fade",
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false
   }
 });
