@@ -1,14 +1,16 @@
 @media (max-width: 1200px)
   .container
     max-width: 960px
-  .slider
-    width: 590px
-  .swiper
-    &-slide
+
+  .hotel
+    &-slider
       &__image
         width: 100%
         height: 100%
         object-fit: cover
+    &__slider
+      width: 590px
+
 @media (max-width: 992px)
   .container,
   .newsletter-wrapper
@@ -38,14 +40,29 @@
       margin-bottom: 30px
     &-right
       flex-direction: row
+    &-slider
+      width: 100%
   .booking
     width: 340px
-  .slider
-    width: 100%
   .map
     width: 340px
   .newsletter
-    padding: 58px 0
+    padding: 72px 0 73px 0
+  .reviews
+    &-slider
+      &__item
+        max-width: 580px
+      &__button
+        top: 41%
+        &--prev
+          left: 0
+        &--next
+          right: 0
+    &__title
+      font-size: 30px
+      line-height: 38px
+      margin-bottom: 50px
+
 @media (max-width: 767px)
   .container
     max-width: 576px
@@ -87,12 +104,12 @@
       &__offer
         order: -1
         margin-left: 0
-  .slider
-    height: 350px
   .hotel
     &-right
       flex-direction: column
       min-height: 450px
+    &-slider
+      height: 350px
   .booking
     width: 100%
   .map
@@ -103,6 +120,22 @@
       width: 92%
       flex-direction: column
       align-items: flex-start
+  .reviews
+    &-slider
+      &__item
+        padding: 0 30px 30px
+        &:after, &:before
+          display: none
+      &__button
+        top: 32px
+        &--prev
+          left: 50%
+          margin-left: -65px
+          transform: translate(-50%, 0)
+        &--next
+          right: 50%
+          margin-right: -65px
+          transform: translate(50%, 0)
 
 @media (max-width: 576px)
   .logo
@@ -111,11 +144,11 @@
     &-top
       padding-top: 28px
       padding-bottom: 28px
-  .slider
-    height: 250px
   .hotel
     &__slider
       margin-bottom: 20px
+    &-slider
+      height: 250px
   .newsletter
     padding: 76px 0 83px 0
     &__title
@@ -143,32 +176,55 @@
         margin: 0
     &-grid
       padding-top: 18px
+    &-slider
+      width: 278px
+      height: 179px
+
   //   &-right
   //     justify-content: flex-start
   // .map
   //   margin-top: 20px
 
-  .slider
-    width: 278px
-    height: 179px
-
   .newsletter
-    padding: 5px 20px 80px 
-    &__title
-      margin-bottom: 41px
+    padding: 5px 20px 83px
     &-wrapper
       margin: 0
       width: 100%
     &-title
+      margin-bottom: 36px
       &__normal
         font-size: 20px
         line-height: 25px
-        margin-bottom: 5px
       &__strong
         font-size: 30px
         line-height: 38px
+        margin-top: 5px
   .subscribe
     &__input
       padding-left: 20px
- 
-        
+  .reviews
+    padding: 40px 0 50px
+    &__title
+      font-size: 18px
+      line-height: 23px
+      // margin-bottom: 42px
+      margin: 0 38px 42px
+    &-slider
+      &__item
+        padding: 0 30px 30px
+        &:after, &:before
+          display: none
+      &__button
+        top: 32px
+        &--prev
+          left: 40%
+          margin-top: -2px
+          margin-left: -67px
+          transform: translate(-40%, 0)
+        &--next
+          right: 40%
+          margin-top: -2px
+          margin-right: -63px
+          transform: translate(40%, 0)
+      &__text
+        text-align: left

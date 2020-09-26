@@ -8,13 +8,15 @@
     text-align: center
     text-transform: uppercase
     margin-bottom: 70px
+    margin-top: 0
+    
   &-slider
     &__item
       position: relative
       display: flex
       flex-direction: column
       align-items: center
-      width: 730px
+      max-width: 730px
       margin: 45px auto 0
       background-color: #fff
       border-radius: 8px
@@ -39,7 +41,7 @@
         background-repeat: no-repeat
     &__button
       position: absolute
-      top: 50%
+      top: 39%
       transform: translateY(-50%)
       width: 30px
       height: 30px
@@ -53,10 +55,10 @@
 
       &--prev
         background-image: url(../img/arrow-prev-secondary.svg)
-        left: 0
+        left: 19px
       &--next
         background-image: url(../img/arrow-next-secondary.svg)
-        right: 0
+        right: 19px
     &__profile
       display: flex
       flex-direction: column
