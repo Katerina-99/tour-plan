@@ -228,8 +228,9 @@
               <button class="button booking__button">View Other Options</button>
             </div>
             <!-- /.booking -->
-            <div class="map">
-              <iframe
+            <!-- <div class="map"> -->
+            <div id="map" class="myMap"></div>
+            <!-- <iframe
                 class="maps"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.044221771433!2d98.29428012197458!3d7.89044261750946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30503b7bfcd9f903%3A0xf7065fac1e3d7c48!2sDoubleTree%20by%20Hilton%20Phuket%20Banthai%20Resort!5e0!3m2!1sru!2spt!4v1600881287464!5m2!1sru!2spt"
                 height="213"
@@ -237,8 +238,8 @@
                 allowfullscreen=""
                 aria-hidden="false"
                 tabindex="0"
-              ></iframe>
-            </div>
+              ></iframe> -->
+            <!-- </div> -->
             <!-- /.map -->
           </div>
           <!-- /.hotel-right -->
@@ -307,7 +308,11 @@
             <div class="swiper-slide">
               <div class="reviews-slider__item">
                 <div class="reviews-slider__profile">
-                  <img src="img/reviews-avatar-1.jpg" alt="photo: Emma Whitson" class="reviews-slider__avatar" />
+                  <img
+                    src="img/reviews-avatar-1.jpg"
+                    alt="photo: Emma Whitson"
+                    class="reviews-slider__avatar"
+                  />
                   <h3 class="reviews-slider__username">Emma Whitson</h3>
                   <span class="reviews-slider__date">Stayed 9 Des, 2019</span>
                   <div class="reviews-slider__rating">
@@ -321,9 +326,21 @@
                 </div>
                 <!-- /.reviews-slider__profile -->
                 <p class="reviews-slider__text">
-                  Great staff, very helpful and friendly receptionists. The hotel is small but very cozy. There is a parking lot (you need to enter the gate under the arch). Breakfast: it is convenient to bring it to your room. But the breakfast is very
-                  monotonous: an egg, a slice of apple, yogurt, a packet of juice (not tasty), a sandwich and a muffin. I would like a little more variety, after 2 days this breakfast is very boring. They bring breakfast until 10 am, this time was very
-                  suitable for us. Great location. To the metro 10 minutes along a busy street. There is everything you need nearby. The room itself is clean, everything worked properly, there are no questions about the number. The only thing is that if the windows face the road, it will be noisy. For people with sensitive sleep, I would recommend rooms on the opposite side of the road.
+                  Great staff, very helpful and friendly receptionists. The
+                  hotel is small but very cozy. There is a parking lot (you need
+                  to enter the gate under the arch). Breakfast: it is convenient
+                  to bring it to your room. But the breakfast is very
+                  monotonous: an egg, a slice of apple, yogurt, a packet of
+                  juice (not tasty), a sandwich and a muffin. I would like a
+                  little more variety, after 2 days this breakfast is very
+                  boring. They bring breakfast until 10 am, this time was very
+                  suitable for us. Great location. To the metro 10 minutes along
+                  a busy street. There is everything you need nearby. The room
+                  itself is clean, everything worked properly, there are no
+                  questions about the number. The only thing is that if the
+                  windows face the road, it will be noisy. For people with
+                  sensitive sleep, I would recommend rooms on the opposite side
+                  of the road.
                 </p>
               </div>
               <!-- /.reviews-slider__item -->
@@ -332,7 +349,11 @@
             <div class="swiper-slide">
               <div class="reviews-slider__item">
                 <div class="reviews-slider__profile">
-                  <img src="img/reviews-avatar-2.jpg" alt="photo: Peter Grifind" class="reviews-slider__avatar" />
+                  <img
+                    src="img/reviews-avatar-2.jpg"
+                    alt="photo: Peter Grifind"
+                    class="reviews-slider__avatar"
+                  />
                   <h3 class="reviews-slider__username">Peter Grifind</h3>
                   <span class="reviews-slider__date">Stayed 1 Jan, 2020</span>
                   <div class="reviews-slider__rating">
@@ -346,10 +367,18 @@
                 </div>
                 <!-- /.reviews-slider__profile -->
                 <p class="reviews-slider__text">
-                  Very stylish design of the room, everything is just like in the photo (pink armchair, flower beds, chandeliers and furniture in a princess theme) .And you can only dream of having breakfast in bed! In the neighborhood there is a
-                  picturesque courtyard, a bunch of shops and restaurants, 10 minutes walk to the Marjanishvili metro station, there is even a VTB ATM, which made me very happy... The hospitable owners paid us a taxi from the airport, like relatives,
-                  helped in any issue, took into account all our wishes, for which im a huge "madloba". PS: by the way, subscribe to the hotel's instagram, the owners know a gorgeous viewpoint for a photo and tell about it only to their guests !!!
-
+                  Very stylish design of the room, everything is just like in
+                  the photo (pink armchair, flower beds, chandeliers and
+                  furniture in a princess theme) .And you can only dream of
+                  having breakfast in bed! In the neighborhood there is a
+                  picturesque courtyard, a bunch of shops and restaurants, 10
+                  minutes walk to the Marjanishvili metro station, there is even
+                  a VTB ATM, which made me very happy... The hospitable owners
+                  paid us a taxi from the airport, like relatives, helped in any
+                  issue, took into account all our wishes, for which im a huge
+                  "madloba". PS: by the way, subscribe to the hotel's instagram,
+                  the owners know a gorgeous viewpoint for a photo and tell
+                  about it only to their guests !!!
                 </p>
               </div>
               <!-- /.reviews-slider__item -->
@@ -357,14 +386,22 @@
             <!-- /.swiper-slide -->
           </div>
           <!-- /.swiper-wrapper -->
-          <button class="reviews-slider__button reviews-slider__button--prev"></button>
-          <button class="reviews-slider__button reviews-slider__button--next"></button>
+          <button
+            class="reviews-slider__button reviews-slider__button--prev"
+          ></button>
+          <button
+            class="reviews-slider__button reviews-slider__button--next"
+          ></button>
         </div>
         <!-- /.reviews-slider -->
       </div>
-      <!-- /.container --> 
+      <!-- /.container -->
     </section>
 
+    <script
+      src="https://api-maps.yandex.ru/2.1/?apikey=98104e37-6f98-4ad6-a31b-a0a35fc48265&lang=ru_RU"
+      type="text/javascript"
+    ></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
   </body>
