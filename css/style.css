@@ -804,7 +804,7 @@ template {
   cursor: pointer;
 }
 
-.map {
+.myMap {
   width: 347px;
   height: 213px;
   background-color: #000000;
@@ -812,7 +812,7 @@ template {
   overflow: hidden;
 }
 
-.maps {
+.myMap {
   width: 100%;
 }
 
@@ -1124,7 +1124,7 @@ template {
   .booking {
     width: 340px;
   }
-  .map {
+  .myMap {
     width: 340px;
   }
   .newsletter {
@@ -1225,7 +1225,7 @@ template {
   .booking {
     width: 100%;
   }
-  .map {
+  .myMap {
     width: 100%;
   }
   .newsletter-wrapper {
