@@ -510,7 +510,7 @@ template {
 
 .hotel {
   padding-top: 13px;
-  padding-bottom: 56px;
+  padding-bottom: 70px;
 }
 
 .hotel-info {
@@ -818,9 +818,9 @@ template {
 
 .newsletter {
   position: relative;
-  padding: 91px 0 69px 0;
+  padding: 79px 0 66px 0;
   background-image: url(../img/newsletter-bg.jpg);
-  background-repeat: none;
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -1103,6 +1103,12 @@ template {
   .search__input {
     width: 340px;
   }
+  .hotel {
+    padding-bottom: 57px;
+  }
+  .hotel-info__rating {
+    margin-top: 5px;
+  }
   .hotel-grid {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1110,7 +1116,7 @@ template {
             flex-direction: column;
   }
   .hotel__slider {
-    margin-bottom: 30px;
+    margin-bottom: 28px;
   }
   .hotel-right {
     -webkit-box-orient: horizontal;
@@ -1128,7 +1134,7 @@ template {
     width: 340px;
   }
   .newsletter {
-    padding: 72px 0 73px 0;
+    padding: 74px 0 72px 0;
   }
   .reviews-slider__item {
     max-width: 580px;
@@ -1217,7 +1223,6 @@ template {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    min-height: 450px;
   }
   .hotel-slider {
     height: 350px;
@@ -1301,7 +1306,13 @@ template {
   }
   .hotel {
     padding-top: 5px;
-    padding-bottom: 40px;
+    padding-bottom: 39px;
+  }
+  .hotel-info {
+    padding-top: 5px;
+  }
+  .hotel-info__offer {
+    margin-top: 0;
   }
   .hotel-info__description {
     margin: 0;
@@ -1312,9 +1323,26 @@ template {
   .hotel-slider {
     width: 278px;
     height: 179px;
+    margin-bottom: 18px;
+  }
+  .stars {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    min-width: 48px;
+    margin-right: 16px;
+  }
+  .booking {
+    margin-bottom: 20px;
+  }
+  .map {
+    height: 172px;
   }
   .newsletter {
-    padding: 5px 20px 83px;
+    padding: 52px 20px 83px;
   }
   .newsletter-wrapper {
     margin: 0;
