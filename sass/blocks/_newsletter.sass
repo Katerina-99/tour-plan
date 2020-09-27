@@ -1,6 +1,6 @@
 .newsletter
   position: relative
-  padding: 78px 0 67px 0
+  padding: 91px 0 69px 0
   background-image: url(../img/newsletter-bg.jpg)
   background-repeat: none
   background-size: cover
@@ -50,7 +50,12 @@
     font-weight: 300
     font-size: 14px
     line-height: 18px
-    color: #BDBDBD
+    &::-webkit-input-placeholder
+      color: #BDBDBD
+    &::-moz-placeholder
+      color: #BDBDBD
+    &:-ms-input-placeholder
+      color: #BDBDBD
   &__button
     position: absolute
     min-width: 65px
@@ -63,3 +68,4 @@
     font-weight: bold
     font-size: 12px
     line-height: 15px
+    cursor: pointer

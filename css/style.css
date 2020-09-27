@@ -818,7 +818,7 @@ template {
 
 .newsletter {
   position: relative;
-  padding: 78px 0 67px 0;
+  padding: 91px 0 69px 0;
   background-image: url(../img/newsletter-bg.jpg);
   background-repeat: none;
   background-size: cover;
@@ -886,6 +886,17 @@ template {
   font-weight: 300;
   font-size: 14px;
   line-height: 18px;
+}
+
+.subscribe__input::-webkit-input-placeholder {
+  color: #BDBDBD;
+}
+
+.subscribe__input::-moz-placeholder {
+  color: #BDBDBD;
+}
+
+.subscribe__input:-ms-input-placeholder {
   color: #BDBDBD;
 }
 
@@ -901,6 +912,7 @@ template {
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
+  cursor: pointer;
 }
 
 .reviews {
