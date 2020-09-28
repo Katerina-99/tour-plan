@@ -10,6 +10,9 @@
         object-fit: cover
     &__slider
       width: 590px
+  .card
+    width: 230px
+    height: 230px
 
 @media (max-width: 992px)
   .container,
@@ -51,13 +54,14 @@
   .map
     width: 340px
   .newsletter
-    padding: 74px 0 72px 0
+    padding: 72px 0 72px 0
   .reviews
+    padding: 40px 0 60px 0
     &-slider
       &__item
         max-width: 580px
       &__button
-        top: 41%
+        top: 50%
         &--prev
           left: 0
         &--next
@@ -66,6 +70,14 @@
       font-size: 30px
       line-height: 38px
       margin-bottom: 50px
+  .activities
+    &-wrapper
+      flex-wrap: wrap
+    &__card
+      margin-bottom: 20px
+  .card
+    width: 340px
+    height: 255px
 
 @media (max-width: 767px)
   .container
@@ -141,6 +153,15 @@
           right: 50%
           margin-right: -65px
           transform: translate(50%, 0)
+  .activities
+    padding-top: 40px
+    padding-bottom: 60px
+    &__title
+      font-size: 18px
+      line-height: 23px
+  .card
+    width: 49%
+    height: 255px
 
 @media (max-width: 576px)
   .logo
@@ -161,6 +182,8 @@
 
   .subscribe
     width: 100%
+  .card
+    width: 100%
 
 @media (max-width: 320px)
   .container
@@ -175,7 +198,7 @@
       padding-bottom: 14px
   .hotel
     padding-top: 5px
-    padding-bottom: 39px
+    padding-bottom: 37px
     &-info
       padding-top: 5px
       &__offer
@@ -246,3 +269,22 @@
           transform: translate(40%, 0)
       &__text
         text-align: left
+  .activities
+    padding-top: 46px
+    &__title
+      font-size: 18px
+      line-height: 23px
+      margin-bottom: 36px
+    &__card
+      &--ferst
+        order: 1
+        margin-bottom: 20px
+      &--second
+        order: 2
+        margin-bottom: 28px
+      &--third
+        order: 3
+        margin-bottom: 20px
+      &--fourth
+        order: 4
+        margin-bottom: 20px
