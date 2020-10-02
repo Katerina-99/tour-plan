@@ -1084,7 +1084,7 @@ template {
   margin-bottom: 95px;
 }
 
-.footer__logo {
+.footer__logo-link {
   width: 152px;
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
@@ -1139,6 +1139,20 @@ template {
 .footer__contact-form {
   grid-column: span 2;
   padding-left: 5px;
+}
+
+.footer__contact-phone {
+  margin: 0;
+}
+
+.footer__phone-number {
+  text-decoration: none;
+  color: #BDBDBD;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 160%;
+  white-space: nowrap;
 }
 
 .footer__form {
@@ -1197,7 +1211,7 @@ template {
 }
 
 .footer__item--mb-2 {
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
 .footer__icon-wrapper {
@@ -1206,6 +1220,7 @@ template {
 
 .footer__text {
   color: #BDBDBD;
+  margin: 0;
   margin-bottom: 24px;
   font-style: normal;
   font-weight: normal;
@@ -1238,6 +1253,18 @@ template {
   line-height: 15px;
 }
 
+.footer__input::-webkit-input-placeholder {
+  color: #BDBDBD;
+}
+
+.footer__input::-moz-placeholder {
+  color: #BDBDBD;
+}
+
+.footer__input:-ms-input-placeholder {
+  color: #BDBDBD;
+}
+
 .footer__message {
   max-height: 123px;
   overflow: auto;
@@ -1255,6 +1282,18 @@ template {
   line-height: 15px;
 }
 
+.footer__message::-webkit-input-placeholder {
+  color: #BDBDBD;
+}
+
+.footer__message::-moz-placeholder {
+  color: #BDBDBD;
+}
+
+.footer__message:-ms-input-placeholder {
+  color: #BDBDBD;
+}
+
 .footer__button {
   min-width: 160px;
   min-height: 50px;
@@ -1267,6 +1306,7 @@ template {
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
+  cursor: pointer;
 }
 
 .footer__info {
@@ -1512,12 +1552,12 @@ template {
   }
   .footer {
     padding-top: 73px;
-    padding-bottom: 33px;
+    padding-bottom: 30px;
   }
   .footer-wrapper {
     -ms-grid-columns: (1fr)[7];
         grid-template-columns: repeat(7, 1fr);
-    grid-row-gap: 50px;
+    grid-row-gap: 47px;
     margin-bottom: 56px;
     grid-column-gap: 0;
   }
@@ -1525,7 +1565,7 @@ template {
     -ms-flex-preferred-size: 47%;
         flex-basis: 47%;
   }
-  .footer__logo {
+  .footer__logo-link {
     width: 96px;
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
@@ -1543,9 +1583,6 @@ template {
     margin-left: -13px;
     margin-top: 10px;
   }
-  .footer__title--mb-3 {
-    margin-top: -9px;
-  }
   .footer__title--inline {
     margin: 0 44px 0 0;
   }
@@ -1562,10 +1599,14 @@ template {
     grid-column: span 2;
     padding: 0;
   }
+  .footer__item--mb-2 {
+    margin-bottom: 17px;
+  }
   .footer__contact-details {
     grid-column: span 5;
     -ms-grid-row: 3;
     grid-row: 3;
+    padding-top: 15px;
   }
   .footer__contact-form {
     grid-column: span 5;
@@ -1738,7 +1779,7 @@ template {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
-  .footer__logo {
+  .footer__logo-link {
     -ms-grid-row: 1;
     grid-row: 1;
     -ms-grid-column: 1;
@@ -1749,6 +1790,7 @@ template {
     grid-row: 2;
     -ms-grid-column: 1;
     grid-column: 1;
+    margin-left: 0;
   }
   .footer__legal {
     -ms-grid-row: 3;
@@ -1934,8 +1976,8 @@ template {
     padding-bottom: 21px;
   }
   .footer-wrapper {
-    grid-row-gap: 40px;
-    margin-bottom: 27px;
+    grid-row-gap: 38px;
+    margin-bottom: 24px;
   }
   .footer__logo {
     width: 96px;
@@ -1947,6 +1989,13 @@ template {
         -ms-flex-pack: justify;
             justify-content: space-between;
     margin: 0;
+  }
+  .footer__title {
+    margin: 0 0 17px 0;
+  }
+  .footer__title--mb-2 {
+    margin-bottom: 26px;
+    padding-top: 4px;
   }
   .footer__title--inline {
     margin: 0 0 20px;
@@ -1964,7 +2013,7 @@ template {
     margin-top: -9px;
   }
   .footer__categories {
-    margin-top: -11px;
+    margin-top: -8px;
   }
   .footer__contact-form {
     min-width: 280px;
@@ -1976,6 +2025,9 @@ template {
     min-width: 30px;
   }
   .footer__text {
+    margin-bottom: 20px;
+  }
+  .footer__item--mb-2 {
     margin-bottom: 20px;
   }
   .footer__form {
@@ -2012,6 +2064,7 @@ template {
   }
   .footer-bottom__link {
     margin: 0;
+    margin-right: 4px;
   }
   .footer-bottom__information {
     margin: 0;
