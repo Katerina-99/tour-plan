@@ -2,6 +2,12 @@
   .container
     max-width: 960px
 
+  .modal
+    &__dialog
+      &--visible
+        max-height: 100%
+        overflow: scroll
+
   .hotel
     &-slider
       &__image
@@ -381,12 +387,17 @@
         grid-row: 7
         grid-column: 1
         min-width: 0
-
     &-bottom
       &-wrapper
         justify-content: space-between
       &__information
         margin: 0
+
+  .modal
+    &__dialog
+      max-width: 281px
+      width: 100%
+      padding: 33px 40px
 
 @media (max-width: 320px)
   .container
