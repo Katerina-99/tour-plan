@@ -18,6 +18,61 @@ img {
   max-width: 100%;
 }
 
+.input {
+  background-color: #ffffff;
+  border-radius: 4px;
+  border: none;
+  padding: 0 23px;
+  height: 50px;
+}
+
+.input::-webkit-input-placeholder {
+  color: #BDBDBD;
+}
+
+.input::-moz-placeholder {
+  color: #BDBDBD;
+}
+
+.input:-ms-input-placeholder {
+  color: #BDBDBD;
+}
+
+.message {
+  min-height: 123px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  border: none;
+  padding: 18px 23px;
+}
+
+.message::-webkit-input-placeholder {
+  color: #BDBDBD;
+}
+
+.message::-moz-placeholder {
+  color: #BDBDBD;
+}
+
+.message:-ms-input-placeholder {
+  color: #BDBDBD;
+}
+
+.button {
+  min-width: 160px;
+  min-height: 50px;
+  padding: 18px;
+  border: none;
+  border-radius: 4px;
+  background-color: #EC1F46;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  cursor: pointer;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -1250,11 +1305,6 @@ template {
 }
 
 .footer__input {
-  background-color: #ffffff;
-  border-radius: 4px;
-  border: none;
-  padding: 0 23px;
-  height: 50px;
   margin-bottom: 27px;
   -ms-flex-preferred-size: 47%;
       flex-basis: 47%;
@@ -1264,25 +1314,8 @@ template {
   line-height: 15px;
 }
 
-.footer__input::-webkit-input-placeholder {
-  color: #BDBDBD;
-}
-
-.footer__input::-moz-placeholder {
-  color: #BDBDBD;
-}
-
-.footer__input:-ms-input-placeholder {
-  color: #BDBDBD;
-}
-
 .footer__message {
-  min-height: 123px;
   overflow: auto;
-  background-color: #ffffff;
-  border-radius: 4px;
-  border: none;
-  padding: 18px 23px;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   margin-bottom: 10px;
@@ -1290,33 +1323,6 @@ template {
   font-weight: normal;
   font-size: 12px;
   line-height: 15px;
-}
-
-.footer__message::-webkit-input-placeholder {
-  color: #BDBDBD;
-}
-
-.footer__message::-moz-placeholder {
-  color: #BDBDBD;
-}
-
-.footer__message:-ms-input-placeholder {
-  color: #BDBDBD;
-}
-
-.footer__button {
-  min-width: 160px;
-  min-height: 50px;
-  padding: 18px;
-  border: none;
-  border-radius: 4px;
-  background-color: #EC1F46;
-  color: #ffffff;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-  cursor: pointer;
 }
 
 .footer__info {
@@ -1441,6 +1447,98 @@ template {
   border-radius: 4px;
   padding: 7px 21px;
   cursor: pointer;
+}
+
+.modal__overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 143, 223, 0.39);
+  z-index: 100;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opasity 0.2s;
+  transition: opasity 0.2s;
+}
+
+.modal__overlay--visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal__dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  max-width: 478px;
+  padding: 33px 88px;
+  background-color: #0A223D;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #ffffff;
+  border-radius: 8px;
+  z-index: 101;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opasity 0.2s;
+  transition: opasity 0.2s;
+}
+
+.modal__dialog--visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal__close {
+  position: absolute;
+  right: 18px;
+  top: 17px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.modal__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.modal__input {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.modal__message {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.modal__info {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #e0e0e0;
 }
 
 @media (max-width: 1200px) {
