@@ -21,7 +21,8 @@
     height: 230px
   .footer
     &__input
-      flex-basis: 100%
+      &-groupe
+        flex-basis: 100%
 
 @media (max-width: 992px)
   .container,
@@ -98,8 +99,9 @@
       margin-bottom: 56px
       grid-column-gap: 0
     &__input
-      flex-basis: 47%
-      margin-bottom: 15px
+      &-group
+        flex-basis: 47%
+        margin-bottom: 15px
     &__message
       margin-bottom: 22px
     &__logo
@@ -289,7 +291,8 @@
     height: 255px
   .footer
     &__input
-      flex-basis: 100%
+      &-group
+        flex-basis: 100%
     &-wrapper
       grid-template-columns: 1fr
     &__logo
@@ -322,7 +325,7 @@
         min-width: 0
   .modal
     &__dialog
-      padding: 33px 68px
+      padding: 33px 35px
     &__button
       order: 1
     &__info
@@ -414,13 +417,14 @@
           width: 100%
   .breadcrumb
     &-list
+      padding: 0
       padding-top: 20px
-      padding-bottom: 14px
+      margin-bottom: 14px
   .hotel
-    padding-top: 5px
-    padding-bottom: 37px
+    padding-top: 8px
+    padding-bottom: 42px
     &-info
-      padding-top: 5px
+      // padding-top: 5px
       &__offer
         margin-top: 0
       &__description
@@ -438,6 +442,7 @@
     margin-right: 16px
   .booking
     margin-bottom: 20px
+    padding: 22px 23px
   .map
     height: 172px
 
@@ -491,7 +496,7 @@
         text-align: left
   .activities
     padding-top: 46px
-    padding-bottom: 38px
+    padding-bottom: 40px
     &__title
       font-size: 18px
       line-height: 23px
@@ -514,7 +519,7 @@
     padding-bottom: 21px
     &-wrapper
       grid-row-gap: 38px
-      margin-bottom: 24px
+      margin-bottom: 27px
     &__logo
       width: 96px
     &__social
@@ -557,9 +562,10 @@
       flex-direction: column
       align-items: flex-start
     &__input
-      padding: 18px 23px
-      min-width: 280px
-      margin-bottom: 15px
+      &-group
+        // padding: 18px 23px
+        min-width: 280px
+        margin-bottom: 15px
     &__message
       min-width: 280px
       margin-bottom: 15px
