@@ -589,7 +589,54 @@
         margin-bottom: 10px
 
 @media(hover: hover) and (pointer: fine) 
-  .logo__image:hover, .search__button:hover, .user__avatar:hover, .user__name:hover, .navbar-menu__item:hover, .breadcrumb-list__link:hover, .button:hover, .subscribe__button:hover, .reviews-slider__button:hover, .card__button:hover, .footer__logo:hover, .footer__link:hover, .footer__phone-number:hover, .footer-bottom__link:hover
-    /*тут пишешь все свои ховеры*/
-    nav a:hover
-      background: yellow
+  /*тут пишешь все свои ховеры*/
+  .logo
+    &__image:hover
+      transform: scale(1.2)
+  .search
+    &__button:hover
+      opacity: 0.6
+  .user
+    &__avatar:hover
+      transform: scale(1.2)
+    &__name:hover
+      transform: scale(1.2)
+      color: $primary
+  .navbar
+    &-menu
+      &__item:hover
+        transform: scale(1.2)
+  .breadcrumb
+    &-list
+      &__link:hover
+        color: $primary
+  .button:hover
+    opacity: 0.6
+  .subscribe
+    &__button:hover
+      opacity: 0.6
+  .reviews
+    &-slider
+      &__button:hover
+        background-color: #FCA1A8
+        border-radius: 4px
+  .card
+    &__button:hover
+      opacity: 0.6
+  .footer
+    &__logo:hover
+      transform: scale(1.2)
+    &__link:hover
+      color: #696969
+    &__phone-number:hover
+      color: #696969
+    &-bottom
+      &__link:hover
+        color: #696969
+
+
+          
+    
+   
+
+  .logo__image:hover, .search__button:hover,.user__avatar:hover,.user__name:hover,.navbar-menu__item:hover,.breadcrumb-list__link:hover,.button:hover, .subscribe__button:hover,.reviews-slider__button:hover,.card__button:hover,.footer__logo:hover,.footer__link:hover,.footer__phone-number:hover,.footer-bottom__link:hover

@@ -74,10 +74,6 @@ img {
   cursor: pointer;
 }
 
-.button:hover {
-  opacity: 0.6;
-}
-
 .invalid {
   color: #EC1F46;
   border-bottom: 1px solid #EC1F46;
@@ -488,18 +484,8 @@ template {
   display: none;
 }
 
-.navbar-menu__item:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-}
-
 .logo {
   width: 177px;
-}
-
-.logo__image:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
 }
 
 .search {
@@ -532,11 +518,7 @@ template {
   height: 100%;
   border: none;
   background-color: #EC1F46;
-}
-
-.search__button:hover {
   cursor: pointer;
-  opacity: 0.6;
 }
 
 .user {
@@ -557,22 +539,11 @@ template {
      object-fit: cover;
 }
 
-.user__avatar:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-}
-
 .user__name {
   font-size: 14px;
   line-height: 18px;
   color: #333333;
   margin-left: 18px;
-}
-
-.user__name:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-  color: #EC1F46;
 }
 
 .breadcrumb-list {
@@ -600,10 +571,6 @@ template {
 .breadcrumb-list__link {
   text-decoration: none;
   color: inherit;
-}
-
-.breadcrumb-list__link:hover {
-  color: #EC1F46;
 }
 
 .hotel {
@@ -1028,10 +995,6 @@ template {
   border-bottom-right-radius: 4px;
 }
 
-.subscribe__button:hover {
-  opacity: 0.6;
-}
-
 .reviews {
   padding: 40px 0 70px 0;
 }
@@ -1104,18 +1067,9 @@ template {
   z-index: 99;
 }
 
-.reviews-slider__button:hover {
-  background-color: #FCA1A8;
-  border-radius: 4px;
-}
-
 .reviews-slider__button--prev {
   background-image: url(../img/arrow-prev-secondary.svg);
   left: 19px;
-}
-
-.reviews-slider__button--prev:hover {
-  z-index: 100;
 }
 
 .reviews-slider__button--next {
@@ -1206,11 +1160,6 @@ template {
   margin-bottom: 95px;
 }
 
-.footer__logo:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-}
-
 .footer__logo-link {
   width: 152px;
   -ms-grid-row: 1;
@@ -1280,10 +1229,6 @@ template {
   font-size: 14px;
   line-height: 160%;
   white-space: nowrap;
-}
-
-.footer__phone-number:hover {
-  color: #696969;
 }
 
 .footer__form {
@@ -1368,10 +1313,6 @@ template {
   line-height: 160%;
 }
 
-.footer__link:hover {
-  color: #696969;
-}
-
 .footer__input {
   width: 100%;
 }
@@ -1435,10 +1376,6 @@ template {
   font-weight: normal;
   font-size: 12px;
   line-height: 15px;
-}
-
-.footer-bottom__link:hover {
-  color: #696969;
 }
 
 .footer-bottom__information {
@@ -1533,10 +1470,6 @@ template {
   border-radius: 4px;
   padding: 7px 21px;
   cursor: pointer;
-}
-
-.card__button:hover {
-  opacity: 0.6;
 }
 
 .modal__overlay {
@@ -2440,11 +2373,55 @@ template {
 }
 
 @media (hover: hover) and (pointer: fine) {
-  .logo__image:hover, .search__button:hover, .user__avatar:hover, .user__name:hover, .navbar-menu__item:hover, .breadcrumb-list__link:hover, .button:hover, .subscribe__button:hover, .reviews-slider__button:hover, .card__button:hover, .footer__logo:hover, .footer__link:hover, .footer__phone-number:hover, .footer-bottom__link:hover {
-    /*тут пишешь все свои ховеры*/
+  /*тут пишешь все свои ховеры*/
+  .logo__image:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
   }
-  .logo__image:hover nav a:hover, .search__button:hover nav a:hover, .user__avatar:hover nav a:hover, .user__name:hover nav a:hover, .navbar-menu__item:hover nav a:hover, .breadcrumb-list__link:hover nav a:hover, .button:hover nav a:hover, .subscribe__button:hover nav a:hover, .reviews-slider__button:hover nav a:hover, .card__button:hover nav a:hover, .footer__logo:hover nav a:hover, .footer__link:hover nav a:hover, .footer__phone-number:hover nav a:hover, .footer-bottom__link:hover nav a:hover {
-    background: yellow;
+  .search__button:hover {
+    opacity: 0.6;
+  }
+  .user__avatar:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  .user__name:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    color: #EC1F46;
+  }
+  .navbar-menu__item:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  .breadcrumb-list__link:hover {
+    color: #EC1F46;
+  }
+  .button:hover {
+    opacity: 0.6;
+  }
+  .subscribe__button:hover {
+    opacity: 0.6;
+  }
+  .reviews-slider__button:hover {
+    background-color: #FCA1A8;
+    border-radius: 4px;
+  }
+  .card__button:hover {
+    opacity: 0.6;
+  }
+  .footer__logo:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  .footer__link:hover {
+    color: #696969;
+  }
+  .footer__phone-number:hover {
+    color: #696969;
+  }
+  .footer-bottom__link:hover {
+    color: #696969;
   }
 }
 /*# sourceMappingURL=style.css.map */
