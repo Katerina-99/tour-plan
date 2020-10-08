@@ -13,6 +13,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Best Tour Plan - Hotel Booking</title>
   </head>
@@ -20,7 +21,14 @@
     <header class="navbar navbar--mobile--fixed">
       <div class="container">
         <div class="navbar-top">
-          <a href="#" class="logo">
+          <a
+            href="#"
+            class="logo"
+            data-aos="fade-right"
+            data-aos-offset="400"
+            data-aos-delay="300"
+            data-aos-easing="ease-in-sine"
+          >
             <img
               src="img/horizontal-logo.svg"
               alt="logo: Best Tour Plan"
@@ -30,6 +38,10 @@
           <form
             action="#"
             class="search navbar__search navbar__search--mobile--hidden"
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-delay="100"
+            data-aos-easing="ease-in-sine"
           >
             <input
               type="text"
@@ -41,7 +53,13 @@
             </button>
           </form>
 
-          <a href="#" class="user navbar__user navbar__user--mobile--hidden"
+          <a
+            href="#"
+            class="user navbar__user navbar__user--mobile--hidden"
+            data-aos="fade-left"
+            data-aos-offset="300"
+            data-aos-delay="300"
+            data-aos-easing="ease-in-sine"
             ><img
               src="img/user-avatar.jpg"
               alt="Avatar Nathan "
@@ -285,7 +303,13 @@
     </section>
     <section class="newsletter">
       <div class="newsletter-wrapper">
-        <h2 class="newsletter-title newsletter__title">
+        <h2
+          class="newsletter-title newsletter__title"
+          data-aos="fade-right"
+          data-aos-duration="500"
+          data-aos-delay="200"
+          data-aos-easing="ease-in-sine"
+        >
           <span class="newsletter-title__normal">subscribe to our</span>
           <span class="newsletter-title__strong">Newsletter</span>
         </h2>
@@ -293,8 +317,12 @@
           action="send.php"
           method="POST"
           class="subscribe newsletter__subscribe form"
+          data-aos="fade-left"
+          data-aos-duration="500"
+          data-aos-delay="200"
+          data-aos-easing="ease-in-sine"
         >
-          <input    
+          <input
             type="email"
             class="subscribe__input"
             placeholder="Your email address"
@@ -429,7 +457,11 @@
       <div class="container">
         <h2 class="activities__title">Other Activities</h2>
         <div class="activities-wrapper">
-          <div class="card activities__card activities__card--ferst">
+          <div
+            class="card activities__card activities__card--ferst"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
             <img
               src="img/activities/activity-1.jpg"
               alt="The curious corner of chamarel"
@@ -439,7 +471,11 @@
             <button data-toggle="modal" class="card__button">Book Now</button>
           </div>
           <!-- /.card -->
-          <div class="card activities__card activities__card--third">
+          <div
+            class="card activities__card activities__card--third"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
             <img
               src="img/activities/activity-2.jpg"
               alt="Gymkhana club golf course"
@@ -449,7 +485,11 @@
             <button data-toggle="modal" class="card__button">Book Now</button>
           </div>
           <!-- /.card -->
-          <div class="card activities__card activities__card--second">
+          <div
+            class="card activities__card activities__card--second"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
             <img
               src="img/activities/activity-3.jpg"
               alt="Tamarind falls hiking trip - full day"
@@ -461,7 +501,11 @@
             <button data-toggle="modal" class="card__button">Book Now</button>
           </div>
           <!-- /.card -->
-          <div class="card activities__card activities__card--fourth">
+          <div
+            class="card activities__card activities__card--fourth"
+            data-aos="fade-up"
+            data-aos-delay="700"
+          >
             <img
               src="img/activities/activity-4.jpg"
               alt="The blue marine discovery quest"
@@ -479,7 +523,9 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-wrapper">
-          <a href="#" class="footer__logo-link"
+          <a href="#" class="footer__logo-link" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000"
             ><img
               src="img/footer/vertical-logo.svg"
               alt="logo: Best Tour Plan"
@@ -666,6 +712,7 @@
                   placeholder="Phone Number*"
                   name="phone"
                   required
+                  minlength="18"
                 />
               </div>
               <textarea
@@ -724,6 +771,7 @@
             placeholder="Phone Number*"
             name="phone"
             required
+            minlength="18"
           />
           <input
             type="email"
@@ -748,6 +796,7 @@
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.mask.min.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

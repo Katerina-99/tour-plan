@@ -72,7 +72,8 @@ $(document).ready(function() {
           email: "Your email address must be in the format of name@domain.com"
         },
         phone: {
-          required: "Phone is required"
+          required: "Phone is required",
+          minlength: "Phone number must be at least 10 numbers"
         }
       }
     });
@@ -81,4 +82,6 @@ $(document).ready(function() {
   $(document).ready(function() {
     $(".phone").mask("+7 (999) 999-99-99");
   });
+
+  AOS.init();
 });
