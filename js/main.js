@@ -59,7 +59,7 @@ $(document).ready(function() {
   });
 
   // Обработка форм
-  $(".form").each(function () {
+  $(".form").each(function() {
     $(this).validate({
       errorClass: "invalid",
       messages: {
@@ -72,9 +72,13 @@ $(document).ready(function() {
           email: "Your email address must be in the format of name@domain.com"
         },
         phone: {
-          required: "Phone is required",
-        },
-      },
+          required: "Phone is required"
+        }
+      }
     });
-  })
+  });
+
+  $(document).ready(function() {
+    $(".phone").mask("+7 (999) 999-99-99");
+  });
 });
