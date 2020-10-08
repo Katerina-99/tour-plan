@@ -574,6 +574,7 @@
       order: 1
     &__info
       margin-bottom: 15px
+      align-self: flex-start
 
     &-bottom
       &-wrapper
@@ -586,3 +587,9 @@
       &__information
         margin: 0
         margin-bottom: 10px
+
+@media(hover: hover) and (pointer: fine) 
+  .logo__image:hover, .search__button:hover, .user__avatar:hover, .user__name:hover, .navbar-menu__item:hover, .breadcrumb-list__link:hover, .button:hover, .subscribe__button:hover, .reviews-slider__button:hover, .card__button:hover, .footer__logo:hover, .footer__link:hover, .footer__phone-number:hover, .footer-bottom__link:hover
+    /*тут пишешь все свои ховеры*/
+    nav a:hover
+      background: yellow
