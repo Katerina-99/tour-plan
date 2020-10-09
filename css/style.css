@@ -441,6 +441,7 @@ template {
           justify-content: space-between;
   padding-top: 40px;
   padding-bottom: 40px;
+  overflow: hidden;
 }
 
 .navbar-top__menu-button {
@@ -902,6 +903,7 @@ template {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  overflow: hidden;
 }
 
 .newsletter:before {
@@ -1146,6 +1148,7 @@ template {
   color: #ffffff;
   padding-top: 108px;
   padding-bottom: 46px;
+  overflow: hidden;
 }
 
 .footer-wrapper {
@@ -1384,6 +1387,7 @@ template {
 
 .activities {
   padding: 60px 0 98px 0;
+  overflow: hidden;
 }
 
 .activities__title {
