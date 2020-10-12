@@ -29,6 +29,12 @@ $(document).ready(function() {
   var menuButton = $(".menu-button");
   menuButton.on("click", function() {
     $(".navbar-bottom").toggleClass("navbar-bottom--visible");
+
+    if ($(".navbar-bottom").is(".navbar-bottom--visible")) {
+      $("body").addClass("fixedPosition");
+    } else {
+      $("body").removeClass("fixedPosition");
+    }
   });
 
   var modalButton = $("[data-toggle=modal]");
