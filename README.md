@@ -13,3 +13,6 @@ Tour Plan
 Куратор
 
 Екатерина Новик
+
+![image](https://user-images.githubusercontent.com/57578765/214879801-09a4901a-3b99-4425-ba4d-6f7cfe848b00.png)
+
